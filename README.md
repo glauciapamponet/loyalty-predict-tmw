@@ -51,8 +51,7 @@ Confira as ferramentas necessárias para estar confortável em replicar o projet
 - Entendimento dos dados;
 - Definição das variáveis;
 - Criação das Feature Stores;
-- Treinamento do modelo;
-- Registro do modelo no MLFlow;
+- Treinamento e registro do modelo no MLFlow;
 <!-- - Criação de App para Inferência em Tempo Real;
 - Integração com Ecossistema TMW; -->
 
