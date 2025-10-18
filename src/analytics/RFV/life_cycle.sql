@@ -1,6 +1,7 @@
 -- RFV - RECÊNCIA: Categorizando o MAU em fases do ciclo de vida do usuário
 -- Recencia = (tempo desde penultimo dia - tempo desde ultimo dia)
 
+
 WITH tb_daily AS (
     SELECT DISTINCT
         IdCliente,
