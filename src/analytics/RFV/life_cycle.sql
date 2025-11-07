@@ -35,9 +35,10 @@ tb_penultima AS(
 -- Fiel: tempo desde ultimo dia <= 7 e recencia < 15
 -- Turista: 7 <= recência <= 14
 -- Desencantada: recência <= 28
--- Zumbi: recência  > 28
--- Reconquistada: recência < 7 e 14 <= recencia <= 28
--- Reborn: recencia < 7 e recencia > 28
+-- Zumbi: tempo desde ultimo dia  > 28
+-- Reborn: tempo desde ultimo dia < 7 e recencia > 28
+-- Reconquistada: tempo desde ultimo dia < 7 e 14 <= recencia <= 28
+
 
 tb_lifeCycle AS (
     SELECT 
