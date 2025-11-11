@@ -34,11 +34,11 @@ tb_cluster AS (SELECT *,
     END AS catFreqValor
 FROM tb_frequencia_valor)
 
--- SELECT 
---     t1.*,
---     t2.qtdFrequencia,
---     t2.somaPontos,
---     t2.catFreqValor
--- FROM 
---     tb_lifeCycle t1 LEFT JOIN tb_cluster t2
---     ON t1.IdCliente = t2.IdCliente
+SELECT 
+    t1.*,
+    t2.qtdFrequencia,
+    t2.somaPontos,
+    t2.catFreqValor
+FROM 
+    tb_lifeCycle t1 LEFT JOIN tb_cluster t2
+    ON t1.IdCliente = t2.IdCliente
