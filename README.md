@@ -95,6 +95,29 @@ Aqui, foram usados 3 dados de registro de usuários baseado em histórico que po
 
 Tomando a última interação como medidor de atividade, é possivel adotar o ciclo de vida do usuário baseado nela. Se assumido que a primeira interação também funciona como última interação, o caminho de um usuário dentro da plataforma se inicia em Curioso, e pode formar um ciclo quando (ou se) Reconquistado, conforme a janela vai avançando.
 
+### Perfilamento com Base na Frequência e Valor de Usuários
+Dentro da plataforma, os usuários tem a possibilidade de gastar os pontos ganhos no sistema de pontos TMW com atividades e brindes, como por exemplo a lojinha do StreamElements e Tickets de Sorteio ao fim dos cursos. Há também a opção de aquisição dos itens do sistema de RPG do ecossistema TMW. Essas e muitas outras atividades que não dependem de gastos de pontos montam o rol de transações históricas realizadas a cada registro no chat. 
+
+![alt text](img/readme_images/pontuacao_freq_28d.png)
+
+Aqui é possivel notar na ultima janela da base o comportamento consolidado durante a semana em que a audiencia comparece e adquiri uma média de pontos por usuário de forma padrão, e o contraste nos finais de semana, onde poucos usuários aparecem para cumprir presença e, com isso, têm a chance de alcançar a conquista de presenças durante a semana toda, o que garante um ganho maior de pontos.
+
+Baseado nesses dados, o perfilamento acompanha o valor da carteira de pontos do usuário em relação ao seu tempo de comparecimento dentro da janela. Para encontrar os padrões, foi adotada a estratégia de clustering acerca das duas métricas, afim de encontrar o comportamento de grupos. Assim, cada ponto representa um usuário que esteve presente dentro da última janela.
+
+![alt text](img/readme_images/regrasfinais.png)
+
+Quando levados em consideração as regras do sistema de pontos (que dita que quanto maior o tempo de live, maior a quantidade de pontos acumuladas, assim como quanto maior a sequencia de presenças), as rotulações de acordo com as distribuições de clusteres foram adotadas nas seguintes descrições:
+
+| USUÁRIO | Regras |
+| :--- | :--- |
+| Olheiro | `Frequencia esporádica e aparente tempo de live baixo` |
+| Hyper | `Frequencia esporádica e tempo de live razoavel` |
+| Preguiçoso | `Frquencia razoável e tempo de live baixo` |
+| Interessado | `Frequencia promissora/alta e tempo de live baixo/razoavel` |
+| Esforçado | `Frequencia e tempo de live razoaveis` |
+| Eficiente | `Frequencia e tempo de live altos` |
+
+
 🚧 README EM CONSTRUÇÃO 🚧
 
 <!-- ### Treinamento e registro do modelo no MLFlow; -->
